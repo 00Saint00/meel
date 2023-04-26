@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: #f0f0f0;
+}
+
+.btn1 {
+  width: 32px;
+  height: 32px;
+  background: #5688c4;
+  border-radius: 50%;
+}
+
+@layer base {
+  .h1 {
+    @apply font-primary font-medium text-[72px] leading-[86.4px] tracking-[0.001em];
+  }
+  .h4 {
+    @apply font-primary font-normal text-[56px] leading-[120%] tracking-[0.001em];
+  }
+
+  .btn {
+    @apply rounded-full font-primary font-medium cursor-pointer h-[96px];
+  }
+
+  .btn-lg {
+    @apply px-10 text-base;
+  }
+
+  .bot {
+    @apply font-medium font-primary text-[40px] leading-[44px];
+  }
+}
